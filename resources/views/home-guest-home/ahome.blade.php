@@ -215,6 +215,7 @@
                                         <h4>Event Name</h4>
                                     </li>
                                     <li>
+                                        <h1>halo</h1>
                                         <span>Date:</span>
                                         <h6>16 Feb 2036</h6>
                                     </li>
