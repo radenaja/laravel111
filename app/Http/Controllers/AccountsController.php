@@ -10,14 +10,70 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Event;
 use Exception;
 
 class AccountsController extends Controller
 {
+    function donation(){
+        return view("donation-guest-donation.adonation");
+    }
+    function articlesDetailG(){
+        return view("articlesDetial-guest-articlesDetail.aarticlesDetailG");
+    }
+    
+    function articlesDetail(){
+        return view("articlesDetial-guest-articlesDetail.aarticlesDetail");
+    }
+     
+    function articlesG(){
+        return view("articles-guest-articles.aarticlesG");
+    }
+
+    function articles(){
+        return view("articles-guest-articles.aarticles");
+    }
+    function bookDetail(){
+        return view("bookDetail-guest-bookDetail.abookDetail");
+    }
+
+    function bookDetailG(){
+        return view("bookDetail-guest-bookDetail.abookDetailG");
+    }
+    function book(){
+        return view("book-guest-book.abook");
+    }
+
+    function bookG(){
+        return view("book-guest-book.abookG");
+    }
+
+    // function eventGnextpage(){
+    //     $events = Event::paginate(9);
+    //     return view('events.eventGnextpage', compact('events'));
+    // }
+    function eventDetail(){
+        return view("eventDetail-guest-eventDetail.aeventDetail");
+    }
+
+    function eventDetailG(){
+        return view("eventDetail-guest-eventDetail.aeventDetailG");
+    }
+    function event(){
+        return view("event-guest-event.aevent");
+    }
+
+    function eventG(){
+        return view("event-guest-event.aeventG");
+    }
+
+    function updateProfile(){
+        return view("account-login-register.aupdate-profile");
+    }
     function profile(){
         return view("home-guest-home.aprofile");
     }
-    
+
     function home(){
         return view("home-guest-home.ahome");
     }
@@ -130,6 +186,11 @@ class AccountsController extends Controller
 
     function register(){
         return view("account-login-register.aregister");
+    }
+
+    function registerNotif(){
+        return redirect(route('aregister'))
+        ->with('success', 'silahkan melakukan register terlebih dahulu');
     }
 
     function registerPost(Request $request){

@@ -40,8 +40,10 @@
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#home" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#about-us">About us</a></li>
-                            <li class="scroll-to-section"><a href="#events">Event</a></li>
-                            <li class="scroll-to-section"><a href="#">Donation</a></li>
+                            <li class="scroll-to-section"><a href="aevent">Event</a></li>
+                            <li class="scroll-to-section"><a href="abook">Books</a></li>
+                            <li class="scroll-to-section"><a href="aarticles">Articles</a></li>
+                            <li class="scroll-to-section"><a href="adonation">Donation</a></li>
                             <li><a href="aprofile" class="actived">Profile <img src="{{ asset('images/profile-header.jpg') }}" alt="Profile Picture"></a></li>
 
                         </ul>   
@@ -191,7 +193,7 @@
         </div>
     </div>
 
-    <div class="section events" id="events">
+    <div class="section eventsDisplay">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -199,23 +201,56 @@
                         <h2>Our Events</h2>
                     </div>
                 </div>
-
+                <!-- Event Items -->
                 <div class="col-lg-12 col-md-6">
-                    <div class="item">
+                    <div class="itemDisplay">
                         <div class="row">
-                            <div class="col-lg-3">
-                                <div class="image">
-                                <img src="images/event-1.jpg" alt="">
+                            <div class="col-lg-3 col-md-4">
+                                <div class="imageDisplay">
+                                    <img src="images/event-1.jpg" alt="Event 1">
                                 </div>
                             </div>
-                            <div class="col-lg-9">
-                                <ul>
+                            <div class="col-lg-9 col-md-8">
+                                <ul class="event-details">
                                     <li>
-                                        <span class="category">New Event</span>
+                                        <span class="categoryDisplay">New Event</span>
                                         <h4>Event Name</h4>
                                     </li>
                                     <li>
-                                        <h1>halo</h1>
+                                        <span>Date:</span>
+                                        <h6>16 Feb 2036</h6>
+                                    </li>
+                                    <li>
+                                        <span>Duration:</span>
+                                        <h6>22 Hours</h6>
+                                    </li>
+                                    <li>
+                                        <span>Price:</span>
+                                        <h6>$120</h6>
+                                    </li>
+                                </ul>
+                                <a href="#"><i class="bi bi-caret-right-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copy and adjust other event blocks here -->
+                
+                <div class="col-lg-12 col-md-6">
+                    <div class="itemDisplay">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4">
+                                <div class="imageDisplay">
+                                    <img src="images/event-2.jpg" alt="Event 1">
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-8">
+                                <ul class="event-details">
+                                    <li>
+                                        <span class="categoryDisplay">New Event</span>
+                                        <h4>Event Name</h4>
+                                    </li>
+                                    <li>
                                         <span>Date:</span>
                                         <h6>16 Feb 2036</h6>
                                     </li>
@@ -235,30 +270,30 @@
                 </div>
 
                 <div class="col-lg-12 col-md-6">
-                    <div class="item">
+                    <div class="itemDisplay">
                         <div class="row">
-                        <div class="col-lg-3">
-                            <div class="image">
-                            <img src="images/event-2.jpg" alt="">
+                            <div class="col-lg-3 col-md-4">
+                                <div class="imageDisplay">
+                                    <img src="images/event-3.jpg" alt="Event 1">
+                                </div>
                             </div>
-                        </div>
-                            <div class="col-lg-9">
-                                <ul>
+                            <div class="col-lg-9 col-md-8">
+                                <ul class="event-details">
                                     <li>
-                                        <span class="category">New Event</span>
+                                        <span class="categoryDisplay">New Event</span>
                                         <h4>Event Name</h4>
                                     </li>
                                     <li>
                                         <span>Date:</span>
-                                        <h6>24 Feb 2036</h6>
+                                        <h6>16 Feb 2036</h6>
                                     </li>
                                     <li>
                                         <span>Duration:</span>
-                                        <h6>30 Hours</h6>
+                                        <h6>22 Hours</h6>
                                     </li>
                                     <li>
                                         <span>Price:</span>
-                                        <h6>$320</h6>
+                                        <h6>$120</h6>
                                     </li>
                                 </ul>
                                 <a href="#"><i class="bi bi-caret-right-fill"></i></a>
@@ -267,43 +302,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-12 col-md-6">
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <div class="image">
-                                <img src="images/event-3.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-9">
-                                <ul>
-                                    <li>
-                                        <span class="category">New Event</span>
-                                        <h4>Event Name</h4>
-                                    </li>
-                                    <li>
-                                        <span>Date:</span>
-                                        <h6>12 Mar 2036</h6>
-                                    </li>
-                                    <li>
-                                        <span>Duration:</span>
-                                        <h6>48 Hours</h6>
-                                    </li>
-                                    <li>
-                                        <span>Price:</span>
-                                        <h6>$440</h6>
-                                    </li>
-                                </ul>
-                                <a href="#"><i class="bi bi-caret-right-fill"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     
-    <div class="container">
+    {{-- <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="section-heading">
@@ -318,7 +321,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <footer>
         <div class="container">

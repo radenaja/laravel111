@@ -1,4 +1,3 @@
-
 *,
 ::before,
 ::after {
@@ -168,11 +167,9 @@ button,
     box-shadow: none;
 }
 
-
 progress {
     vertical-align: baseline;
 }
-
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
@@ -267,7 +264,6 @@ button,
     cursor: default;
 }
 
-
 img,
 svg,
 video,
@@ -282,13 +278,11 @@ object {
     /* 2 */
 }
 
-
 img,
 video {
     max-width: 100%;
     height: auto;
 }
-
 
 [hidden] {
     display: none;
@@ -395,7 +389,6 @@ video {
     --tw-backdrop-saturate: ;
     --tw-backdrop-sepia: ;
 }
-
 
 .container {
     width: 100%;
@@ -2318,7 +2311,7 @@ video {
 }
 
 .text-xm {
-    font-size: 1.020rem;
+    font-size: 1.02rem;
     line-height: 1.25rem;
 }
 
@@ -4058,15 +4051,15 @@ video {
 }
 
 .input-field {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .input-error {
-    border-color: red !important; 
+    border-color: red !important;
 }
 
 .peer {
-    overflow: visible; 
+    overflow: visible;
 }
 
 .peer-checked img.check-box {
@@ -4091,28 +4084,28 @@ video {
     z-index: 9999;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-  
+
 .notification p {
-font-size: 14px;
-line-height: 28px;
-color: white !important; /* Tambahkan !important */
+    font-size: 14px;
+    line-height: 28px;
+    color: white !important; /* Tambahkan !important */
 }
 
 /* Notifikasi sukses */
 .notification.success {
-background-color: #4caf50; /* Hijau */
-border: 1px solid #388e3c;
+    background-color: #4caf50; /* Hijau */
+    border: 1px solid #388e3c;
 }
 
 /* Notifikasi error */
 .notification.error {
-background-color: #f44336; /* Merah */
-border: 1px solid #d32f2f;
+    background-color: #f44336; /* Merah */
+    border: 1px solid #d32f2f;
 }
 
 /* Animasi tambahan untuk transisi masuk */
 .notification {
-animation: slideIn 0.5s ease;
+    animation: slideIn 0.5s ease;
 }
 
 @keyframes slideIn {
@@ -4140,7 +4133,7 @@ animation: slideIn 0.5s ease;
     z-index: 9999;
     visibility: visible;
     transition: opacity 0.1s ease;
-    animation: opacity 2s ease;; /* Tidak ada animasi secara default */
+    animation: opacity 2s ease; /* Tidak ada animasi secara default */
 }
 
 .js-preloader.loaded {
@@ -4149,7 +4142,7 @@ animation: slideIn 0.5s ease;
     transition: opacity 0.5s ease; /* Efek transisi saat preloader hilang */
 }
 
-    /* @keyframes fadeOut {
+/* @keyframes fadeOut {
         0% {
             opacity: 1;
         }
@@ -4157,43 +4150,43 @@ animation: slideIn 0.5s ease;
             opacity: 0;
         }
     } */
-  
-  @-webkit-keyframes dot {
+
+@-webkit-keyframes dot {
     50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
     }
-  }
-  
-  @keyframes dot {
+}
+
+@keyframes dot {
     50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
     }
-  }
-  
-  @-webkit-keyframes dots {
+}
+
+@-webkit-keyframes dots {
     50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
     }
-  }
-  
-  @keyframes dots {
+}
+
+@keyframes dots {
     50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
     }
-  }
-  
-  .preloader-inner {
+}
+
+.preloader-inner {
     position: relative;
     width: 142px;
     height: 40px;
     background: transparent;
-  }
-  
-  .preloader-inner .dot {
+}
+
+.preloader-inner .dot {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -4205,18 +4198,18 @@ animation: slideIn 0.5s ease;
     transform: translateX(0);
     -webkit-animation: dot 2.8s infinite;
     animation: dot 2.8s infinite;
-  }
-  
-  .preloader-inner .dots {
+}
+
+.preloader-inner .dots {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     margin-top: 12px;
     margin-left: 31px;
     -webkit-animation: dots 2.8s infinite;
     animation: dots 2.8s infinite;
-  }
-  
-  .preloader-inner .dots span {
+}
+
+.preloader-inner .dots span {
     display: block;
     float: left;
     width: 16px;
@@ -4224,4 +4217,4 @@ animation: slideIn 0.5s ease;
     margin-left: 16px;
     background: #94df33;
     border-radius: 50%;
-  }
+}

@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const preloader = document.getElementById("js-preloader");
-    const animationDuration = 2000; 
+    const animationDuration = 2000;
 
-    preloader.style.animation = `fadeOut ${animationDuration / 1000}s ease`; 
+    preloader.style.animation = `fadeOut ${animationDuration / 1000}s ease`;
 
     setTimeout(() => {
-        preloader.classList.add("loaded"); 
-    }, animationDuration); 
+        preloader.classList.add("loaded");
+    }, animationDuration);
 });
-
 
 function togglePassword(inputId, iconId) {
     const passwordInput = document.getElementById(inputId);
@@ -19,10 +18,10 @@ function togglePassword(inputId, iconId) {
 
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        eyeIcon.src = eyeOpenPath; 
+        eyeIcon.src = eyeOpenPath;
     } else {
         passwordInput.type = "password";
-        eyeIcon.src = eyeClosedPath; 
+        eyeIcon.src = eyeClosedPath;
     }
 }
 
@@ -85,6 +84,37 @@ function forgetPasswordForm() {
     if (!emailPattern.test(email.value)) {
         email.classList.add("input-error");
         emailError.classList.remove("hidden");
+        valid = false;
+    }
+
+    return valid;
+}
+
+function updateProfileForm() {
+    const name = document.getElementById("name");
+    const nameError = document.getElementById("name-error");
+    const status = document.getElementById("status");
+    const statusError = document.getElementById("status-error");
+
+    let valid = true;
+
+    // Reset error states
+    name.classList.remove("input-error");
+    nameError.classList.add("hidden");
+    status.classList.remove("input-error");
+    statusError.classList.add("hidden");
+
+    // Validate Name
+    if (name.value.length <= 5) {
+        name.classList.add("input-error");
+        nameError.classList.remove("hidden");
+        valid = false;
+    }
+
+    // Validate Status
+    if (status.value.length <= 5) {
+        status.classList.add("input-error");
+        statusError.classList.remove("hidden");
         valid = false;
     }
 
